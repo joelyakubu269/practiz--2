@@ -5,7 +5,7 @@ func StackAll(blocks [][]string) []string {
 		return []string{}
 	}
 	var res = []string{}
-	for i := 0; i < len(blocks)-1; i++ {
+	for i := 0; i < len(blocks); i++ {
 		res = StackTwo(res, blocks[i])
 
 	}
