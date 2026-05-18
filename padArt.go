@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -17,7 +16,4 @@ func PadArtRows(rows []string, width int) []string {
 		}
 	}
 	return sli
-}
-func main() {
-	fmt.Println(PadArtRows([]string{"hello"}, 8))
 }
