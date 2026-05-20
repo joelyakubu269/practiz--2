@@ -15,7 +15,7 @@ func ValidateBanner(banner map[rune][]string) error {
 			return fmt.Errorf("key is absent")
 		}
 		if len(lines) != 8 {
-			return fmt.Errorf("value is not up to 8")
+			return fmt.Errorf("%c has value not up to 8", r)
 		}
 	}
 
